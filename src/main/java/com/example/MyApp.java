@@ -8,6 +8,7 @@ public class MyApp {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         MessageService messageService = applicationContext.getBean("messageService", MessageService.class);
+        MessageService randomTextService = applicationContext.getBean("randomTextService", MessageService.class);
 
         System.out.println(messageService.getMessage());
 
