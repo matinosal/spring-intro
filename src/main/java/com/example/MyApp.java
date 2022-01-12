@@ -13,6 +13,7 @@ public class MyApp {
         MessageService randomTextService = applicationContext.getBean(RandomTextMessageService.class);
 
         System.out.println(messageService.getMessage());
-
+        System.out.println(messageService.hashCode());
+        System.out.println(randomTextService.hashCode());
     }
 }
